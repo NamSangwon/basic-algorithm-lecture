@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int arr[1000002];
+int arr[2000002];
 
 int main(){
     int n;
@@ -13,12 +13,12 @@ int main(){
     for(int i = 0; i < n; i++) {
         int num;
         cin >> num;
-        arr[num]++;
+        arr[num+1000000]++;
     }
 
     cout << endl;
 
-    for(int i = 0; i < 1000000; i++){
-        while(arr[i]--) cout << i << '\n';
+    for(int i = 0; i < 2000002; i++){
+        while(arr[i]--) cout << i - 1000000 << '\n';
     }
 }
