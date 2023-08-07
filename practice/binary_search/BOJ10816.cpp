@@ -9,7 +9,7 @@ int n, m;
 vector<int> arr;
 
 // 그림을 그리면 이해하기 쉬움
-// 해당 카드가 위치할 수 있는 최소 인덱스
+// 해당 카드가 위치할 수 있는 최소 인덱스 ※( == stl의 lower_bound)
 int lower_idx(int target){
     int st = 0;
     int en = n;
@@ -22,7 +22,7 @@ int lower_idx(int target){
 
     return st;
 }
-// 해당 카드가 위치할 수 있는 최대 인덱스
+// 해당 카드가 위치할 수 있는 최대 인덱스 ※( == stl의 upper_bound)
 int upper_idx(int target){
     int st = 0;
     int en = n;
