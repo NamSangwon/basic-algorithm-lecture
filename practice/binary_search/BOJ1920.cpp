@@ -26,6 +26,8 @@ int main(){
         int st = 0;
         int en = n - 1;
 
+        // ( == stl의 binary_search() )
+        // ===========================================
         while(st <= en){
             int mid = (st + en) / 2;
 
@@ -36,6 +38,7 @@ int main(){
                 break;
             }
         }
+        // ===========================================
 
         if (check) cout << 1 << '\n';
         else cout << 0 << '\n';
