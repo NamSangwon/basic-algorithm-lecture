@@ -26,7 +26,8 @@ int main(){
             else {
                 if(bst.empty()) continue;
                 if (num == 1) bst.erase(prev(bst.end())); // 최소값 제거
-                else bst.erase(bst.begin()); // 최대값 제거
+                else bst.erase(bst.begin()); // 최대값 제거 
+                // => *bst.begin()으로 작성 시 최소값이 여러 개일 때 모두 제거되니 유의!
             }
         }
         if (bst.empty()) cout << "EMPTY" << '\n';
