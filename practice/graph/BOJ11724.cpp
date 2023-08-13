@@ -22,7 +22,7 @@ int main(){
     int result = 0;
     for(int i = 1; i <= n; i++){
         if(visit[i]) continue;
-        result++;
+        result++; 
         queue<int> q;
         q.push(i);
         visit[i] = true;
